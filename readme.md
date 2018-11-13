@@ -1,11 +1,11 @@
 ## Git Clone
 ```bash
-git clone https://github.com/yumaeda/laravel-5.5.git laravel-5.5
+git clone https://github.com/yumaeda/laravel-react.git laravel-react
 ```
 
 ## Launch Docker Containers
 ```bash
-cd laravel-5.5
+cd laravel-react
 docker run --rm -v $(pwd):/app composer/composer install
 docker-compose up -d --build
 ```
@@ -33,7 +33,7 @@ docker-compose exec app php artisan cache:clear
 ## Reset DB
 ```bash
 docker-compose down
-docker volume rm laravel-5.5_dbdata
+docker volume rm laravel-react_dbdata
 ```
 
 ## Execute Phan
